@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <audio id="song1">
+            <source src="Media/ij2.mp3" type="audio/mp3">
+          
+        </audio> 
+
+        <audio id="song2">
+            
+          <source src="Media/UNTITLED_ORGANIC_HOUSE.mp3" type="audio/mp3">
+        </audio> 
+        
+        <script>
+
+
+        var song1 = document.getElementById("song1");
+
+        var song2 = document.getElementById("song2");
+
+       
+
+           
+            function playGif(gif_img) {    
+                
+            if (gif_img.src.endsWith("d.png")) {
+                song1.play();
+            }  else if (gif_img.src.endsWith("2.png")) {
+                song2.play();
+            }  
+            
+           
+  if (gif_img.src.endsWith(".gif"))
+  { if (gif_img.src.endsWith("d.gif")) {
+                song1.pause();
+            }  else if (gif_img.src.endsWith("2.gif")) {
+                song2.pause();
+            }  
+   gif_img.src = gif_img.src.substring(0, gif_img.src.length - 3) + "png";
+
+  
+   
+  } else if (gif_img.src.endsWith(".png"))
+  {
+   gif_img.src = gif_img.src.substring(0, gif_img.src.length - 3) + "webp";
+   setTimeout(function(){ gif_img.src = gif_img.src.substring(0, gif_img.src.length - 4) + "gif"; }, 1125);
+   
+  }    
+ }
+           </script>
+
+
+        <title>Music Portfolio</title>
+       <link rel="stylesheet" href="style.css">
+
+     
+    
+    </head>
+<body>
+    <div class ="container">
+        <div class="left-col">
+            <img id="leftDeck" src="Media/record.png" onclick="playGif(this)" />
+            <ul>
+                
+            </ul>
+        </div>
+    
+        <div class="right-col">
+            <img id="rightDeck" src="Media/record2.png" onclick="playGif(this)" />
+            <ul>
+                
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

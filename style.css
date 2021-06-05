@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    height:100vh;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    
+}
+
+.right-col{
+    float: right;
+    margin-top: 140px;
+    margin-right: 140px;
+}
+
+.left-col{
+    float: left;
+    margin-top: 140px;
+    margin-left: 140px;
+}
